@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Plus, Wallet, Trophy, Moon, Sun, Trash2 } from 'lucide-react';
-import NFTCard from '../../../NFTCard';
+import NFTCard from '../components/NFTCard';
 import MintForm from './MintForm';
 import { NFT, getNFTs, addNFT, updateNFT, deleteNFT, simulateMinting, clearWallet, getDarkMode, setDarkMode } from '../lib/LocalStorageUtil';
 
