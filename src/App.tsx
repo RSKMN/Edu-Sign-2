@@ -34,7 +34,7 @@ export default function App() {
   return (
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
-      <RainbowKitProvider chains={config} theme={darkTheme()}>
+      <RainbowKitProvider theme={darkTheme()}>
           <div className="App min-h-screen w-full bg-gradient-to-tr from-indigo-900 via-slate-900 to-gray-950 text-white font-sans tracking-wide">
             {/* HEADER */}
             <header className="text-center py-12 px-4 animate-fade-in-down">
