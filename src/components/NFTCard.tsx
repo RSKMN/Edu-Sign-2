@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Calendar, Edit3, Trash2, ExternalLink } from 'lucide-react';
-import { NFT } from '../lib/localStorageUtil';
+import { NFT } from '../lib/LocalStorageUtil';
 
 interface NFTCardProps {
   nft: NFT;
