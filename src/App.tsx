@@ -14,7 +14,7 @@ import { polygonMumbai, mainnet } from "wagmi/chains";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import WalletConnect from "./components/WalletConnect";
-import FakeWallet from "./Edu-Sign-2/src/components/FakeWallet";
+import FakeWallet from "./components/FakeWallet";
 import CourseRecommender from "./components/CourseRecommender";
 
 const config = getDefaultConfig({
@@ -34,7 +34,7 @@ export default function App() {
   return (
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
-        <RainbowKitProvider chains={config.chains} theme={darkTheme()}>
+      <RainbowKitProvider chains={config} theme={darkTheme()}>
           <div className="App min-h-screen w-full bg-gradient-to-tr from-indigo-900 via-slate-900 to-gray-950 text-white font-sans tracking-wide">
             {/* HEADER */}
             <header className="text-center py-12 px-4 animate-fade-in-down">
