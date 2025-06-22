@@ -66,22 +66,22 @@ export default function CourseRecommender() {
           <div key={idx} className="mb-2">{msg}</div>
         ))}
       </div>
-      <div className="flex gap-2 bg-black">
-        <input
-          type="text"
-          placeholder="Ask what course to take next..."
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          className="flex-1 border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-        />
-        <button
-          onClick={sendQuery}
-          disabled={loading}
-          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-        >
-          {loading ? 'Thinking...' : 'Ask AI'}
-        </button>
-      </div>
+      <div className="flex gap-2">
+  <input
+    type="text"
+    placeholder="Ask what course to take next..."
+    value={input}
+    onChange={(e) => setInput(e.target.value)}
+    className="flex-1 border border-gray-300 rounded px-3 py-2 text-black placeholder-gray-500 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+  />
+  <button
+    onClick={sendQuery}
+    disabled={loading}
+    className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+  >
+    {loading ? 'Thinking…' : 'Ask AI'}
+  </button>
+</div>
     </div>
   );
 }
