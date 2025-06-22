@@ -5,11 +5,7 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-<<<<<<< HEAD
     "types":["node"],
-=======
-    "jsx": "react-jsx",
->>>>>>> 3cef7fa7b30dc454112539a00e61234f016fc671
 
     /* Bundler mode */
     "moduleResolution": "bundler",

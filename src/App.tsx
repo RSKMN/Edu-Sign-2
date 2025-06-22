@@ -1,12 +1,6 @@
-<<<<<<< HEAD
 import React from "react";
 import "./index.css";
 import "@rainbow-me/rainbowkit/styles.css";
-=======
-
-import FakeWallet from './components/FakeWallet';
-import './index.css';
->>>>>>> 3cef7fa7b30dc454112539a00e61234f016fc671
 
 import {
   getDefaultConfig,
@@ -125,8 +119,3 @@ export default function App() {
     </WagmiProvider>
   );
 }
-<<<<<<< HEAD
-=======
-
-export default App;
->>>>>>> 3cef7fa7b30dc454112539a00e61234f016fc671
