@@ -1,4 +1,4 @@
-import React from 'react';
+
 import FakeWallet from './components/FakeWallet';
 import './index.css';
 
