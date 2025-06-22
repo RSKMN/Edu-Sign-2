@@ -1,7 +1,7 @@
 // src/components/CourseRecommender.tsx
 import { useState } from 'react';
-import type { NFT } from '../lib/LocalStorageUtils'; // Ensure path is correct
-import { getNFTs } from '../lib/LocalStorageUtils';
+import type { NFT } from '../lib/LocalStorageUtil'; // Ensure path is correct
+import { getNFTs } from '../lib/LocalStorageUtil';
 
 export default function CourseRecommender() {
   const [input, setInput] = useState('');
