@@ -61,12 +61,12 @@ export default function CourseRecommender() {
   return (
     <div className="mt-10 p-4 bg-white rounded-lg shadow-lg max-w-3xl mx-auto">
       <h2 className="text-2xl font-bold mb-4">📚 EduSign AI Course Recommender</h2>
-      <div className="min-h-[120px] max-h-64 overflow-y-auto bg-gray-100 rounded p-3 text-sm mb-4 whitespace-pre-wrap">
+      <div className="min-h-[120px] max-h-64 overflow-y-auto bg-white-100 rounded p-3 text-sm mb-4 whitespace-pre-wrap">
         {chatLog.map((msg, idx) => (
           <div key={idx} className="mb-2">{msg}</div>
         ))}
       </div>
-      <div className="flex gap-2">
+      <div className="flex gap-2 bg-black">
         <input
           type="text"
           placeholder="Ask what course to take next..."
